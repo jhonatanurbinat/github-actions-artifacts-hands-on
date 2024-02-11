@@ -25,15 +25,8 @@ jobs:
     steps:
     - uses: actions/download-artifact@v3
       with:
-        # Name of the artifact to download.
-        # If unspecified, all artifacts for the run are downloaded.
-        # Optional.
         name: hello-artifact
-    
-        # Destination path. Supports basic tilde expansion.
-        # Optional. Default is $GITHUB_WORKSPACE
         path: ./artifacts  
-    - name: Create annotation for build error
-      run: cat ./artifacts/hello.txt
+    - run: cat ./artifacts/hello.txt
     
     
