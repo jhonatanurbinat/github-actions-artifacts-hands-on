@@ -34,8 +34,6 @@ jobs:
         # Optional. Default is $GITHUB_WORKSPACE
         path: ./artifacts  
     - name: Create annotation for build error
-      run: | 
-        ls -ltr
-        cat ./artifacts/hello.txt
+      run: cat ./artifacts/hello.txt
     
     
